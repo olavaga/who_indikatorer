@@ -6,11 +6,11 @@ library(httr)
 
 # Simple sidebar / main panel layout with theme
 ui <- fluidPage(theme=shinytheme("slate"),
-                titlePanel("Utforsk WHO sitt indikator-API"),
+                titlePanel("Utforsk helsestatus i ulike land basert på bærekraftsindikatorer"),
                 
                 sidebarLayout(
                   sidebarPanel(
-                    p("Denne webappen lar deg enkelt sjekke ulike indikatorer fra WHO sitt offentlige API."),
+                    p("Denne webappen lar deg enkelt sjekke status i et land for ulike indikatorer. Alle data hentes fra WHO sitt offentlige API."),
                     p("Så langt er det støtte for helsepersonell pr 100.000 innbyggere, andel MRSA og ESBL-produserende E.Coli i blodinfeksjoner, andel hjem med tilgang til enkel håndvask, samt andel av befolkningen under den internasjonale fattigdomsgrensen."),
                     p("Formålet med appen er først og fremst at jeg skulle bli bedre kjent med Shiny-rammeverket."),
                     p("Ved manglende data fra APIet, feks er det ikke registrert andel hjem med håndvask i Norge, vil det dukke opp en feilmelding."),
